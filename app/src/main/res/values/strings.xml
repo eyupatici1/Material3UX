@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Material3UX</string>
+    <string name="title_activity_text_fields">TextFieldsActivity</string>
 </resources>

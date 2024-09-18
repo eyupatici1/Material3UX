@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
@@ -35,6 +36,8 @@ data class BottomNavigationItem(
     val hasNews: Boolean,
     val badgeCount: Int? = null
 )
+
+// Use only if you will have 3 to 5 buttons on the bottom
 
 class BottomNavbarActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -103,10 +106,11 @@ class BottomNavbarActivity : ComponentActivity() {
                         }
                     }
                 ) {
-                    Text(
-                        modifier = Modifier.padding(it),
-                        text = "Bottom Navbar"
-                    )
+                    Column(
+                        modifier = Modifier.padding(it)
+                    ) {
+
+                    }
                 }
             }
         }

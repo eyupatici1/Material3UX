@@ -13,28 +13,31 @@
         android:theme="@style/Theme.Material3UX"
         tools:targetApi="31">
         <activity
+            android:name=".TopAppBarActivity"
+            android:exported="false"
+            android:label="@string/title_activity_top_app_bar"
+            android:theme="@style/Theme.Material3UX" />
+        <activity
             android:name=".BottomNavbarActivity"
             android:exported="true"
             android:label="@string/title_activity_bottom_navbar"
             android:theme="@style/Theme.Material3UX">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".SelectionsActivity"
             android:exported="true"
             android:label="@string/title_activity_selections"
-            android:theme="@style/Theme.Material3UX">
-        </activity>
+            android:theme="@style/Theme.Material3UX"></activity>
         <activity
             android:name=".TextFieldsActivity"
             android:exported="true"
             android:label="@string/title_activity_text_fields"
-            android:theme="@style/Theme.Material3UX"></activity>
+            android:theme="@style/Theme.Material3UX" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

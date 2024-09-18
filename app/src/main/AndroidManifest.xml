@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Material3UX"
         tools:targetApi="31">
         <activity
+            android:name=".BottomAppBarActivity"
+            android:exported="true"
+            android:label="@string/title_activity_bottom_app_bar"
+            android:theme="@style/Theme.Material3UX" />
+
+        <activity
             android:name=".TopAppBarActivity"
             android:exported="false"
             android:label="@string/title_activity_top_app_bar"
@@ -21,18 +27,12 @@
             android:name=".BottomNavbarActivity"
             android:exported="true"
             android:label="@string/title_activity_bottom_navbar"
-            android:theme="@style/Theme.Material3UX">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/Theme.Material3UX" />
         <activity
             android:name=".SelectionsActivity"
             android:exported="true"
             android:label="@string/title_activity_selections"
-            android:theme="@style/Theme.Material3UX"></activity>
+            android:theme="@style/Theme.Material3UX" />
         <activity
             android:name=".TextFieldsActivity"
             android:exported="true"
@@ -41,8 +41,14 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.Material3UX" />
+            android:theme="@style/Theme.Material3UX" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
